@@ -1,0 +1,237 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: black;
+   
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    
+    padding: 1rem;
+    height:10vh;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DED0C1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+
+
+
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Bodoni Moda";
+    color: #333;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    
+    margin: 0 20px;
+    position:relative;
+    
+   
+}
+
+.header__nav-link{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin:0 4px;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+.nav__active-link{
+    color:#555353;
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    bottom: -1px;
+    right: 0;
+    transition: all 300ms ease;
+  }
+  .link__hover-effect:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .link__hover-effect--white:after {
+    background-color: #333;
+  }
+  .link__hover-effect--black:after {
+    background-color: black;
+  }
+
+/* Main Content Styles */
+main {
+    background-color: #FAF9F7;
+    padding: 2rem;
+    font-family: 'Roboto';
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#about{
+    display: flex;
+    min-height:90vh;
+    align-items: start;
+}
+.about__image--container {
+    /* Set a fixed height */
+    width:50%;
+    height:auto;
+    /* Maintain natural width */
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.about__image {
+    width: 100%; /* Fill the container height */
+   height:auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container nicely */
+}
+
+.about__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.about__title{
+    padding-bottom: 12px;
+    padding-right: 20px;
+    border-bottom: 1px black solid;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Service Cards */
+
+#services {
+    padding: 20px;
+}
+
+.service {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+#hero {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-image: url('banner.jpg');
+
+
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
