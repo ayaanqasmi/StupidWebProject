@@ -7,53 +7,50 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body class="body">
+<body class="body contact__body">
     <header class="header">
-        <h1 class="header__title">Justine Batter Graphic Design</h1>
+        <h1 class="header__title">Justine Batter</h1>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
-                <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
-                <li class="header__nav-item"><a href="services.html" class="header__nav-link">Services</a></li>
-                <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item link__hover-effect link__hover-effect--white "><a href="home.html" class="header__nav-link ">Home</a></li>
+                <li class="header__nav-item link__hover-effect link__hover-effect--white"><a href="about.html" class="header__nav-link">About</a></li>
+                <li class="header__nav-item link__hover-effect link__hover-effect--white"><a href="services.html" class="header__nav-link">Services</a></li>
+                <li class="header__nav-item "><a href="contact.html" class="header__nav-link  nav__active-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main ">
         <section id="contact" class="contact">
-            <h2 class="contact__title">Contact Us</h2>
-            <p class="contact__description">I'd love to hear from you! Whether you have a question about my services, need assistance, or just want to chat, feel free to reach out using the form below.</p>
             
-            <form action="#" method="post" class="contact__form">
-                <label for="name" class="contact__label">Name:</label>
-                <input type="text" id="name" name="name" class="contact__input" required>
+            
+          
+
+        <div class="form-container">
+            <div class="form">
+                <span class="heading">Get in touch</span>
+                <input placeholder="Name" type="text" class="input">
+                <input placeholder="Email" id="mail" type="email" class="input">
+                <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                <div class="button-container">
+                <div class="send-button">Send</div>
+                <div class="reset-button-container">
+                    <div id="reset-btn" class="reset-button">Reset</div>
+                </div>
+            </div>
+        </div>
+        </div>
         
-                <label for="email" class="contact__label">Email:</label>
-                <input type="email" id="email" name="email" class="contact__input" required>
         
-                <label for="message" class="contact__label">Message:</label>
-                <textarea id="message" name="message" rows="5" class="contact__textarea" required></textarea>
-        
-                <button type="submit" class="contact__button">Send Message</button>
-            </form>
-        
-            <h3 class="contact__subtitle">Other Ways to Connect</h3>
-            <p class="contact__description">If you prefer, you can also reach out via social media:</p>
-            <ul class="contact__social-list">
-                <li class="contact__social-item"><a href="https://facebook.com" target="_blank" class="contact__social-link"><i class="fab fa-facebook-f" style="color: #3b5998;"></i> Facebook</a></li>
-                <li class="contact__social-item"><a href="https://instagram.com" target="_blank" class="contact__social-link"><i class="fab fa-instagram" style="color: #C13584;"></i> Instagram</a></li>
-                <li class="contact__social-item"><a href="https://linkedin.com" target="_blank" class="contact__social-link"><i class="fab fa-linkedin-in" style="color: #0077B5;"></i> LinkedIn</a></li>
-            </ul>
         </section>
     </main>
 
     <footer class="footer">
         <p class="footer__text">&copy; 2023 Justine Batter Graphic Design. All rights reserved.</p>
         <nav class="footer__nav">
-            <a href="https://facebook.com" target="_blank" class="footer__nav-link"><i class="fab fa-facebook-f" style="color: #3b5998;"></i> Facebook</a>
-            <a href="https://instagram.com" target="_blank" class="footer__nav-link"><i class="fab fa-instagram" style="color: #C13584;"></i> Instagram</a>
-            <a href="https://linkedin.com" target="_blank" class="footer__nav-link"><i class="fab fa-linkedin-in" style="color: #0077B5;"></i> LinkedIn</a>
+            <a href="https://facebook.com" target="_blank" class="footer__nav-link facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="footer__nav-link insta"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="footer__nav-link linkedin"><i class="fab fa-linkedin-in"></i> </a>
         </nav>
     </footer>
 </body>
